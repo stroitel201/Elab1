@@ -1,4 +1,4 @@
-package bsuir.lab2.classes.obj;
+package bsuir.lab2_3.classes.obj;
 
 public abstract class Obj {
     public Obj(String _name, int _count)

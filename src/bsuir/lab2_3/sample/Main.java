@@ -1,4 +1,4 @@
-package bsuir.lab2.sample;
+package bsuir.lab2_3.sample;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

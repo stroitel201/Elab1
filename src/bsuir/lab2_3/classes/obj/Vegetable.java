@@ -1,4 +1,4 @@
-package bsuir.lab2.classes.obj;
+package bsuir.lab2_3.classes.obj;
 
 public class Vegetable extends Obj
 {

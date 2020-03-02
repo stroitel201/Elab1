@@ -1,4 +1,4 @@
-package bsuir.lab2.classes.human;
+package bsuir.lab2_3.classes.human;
 
 public class Proger extends human
 {

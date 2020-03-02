@@ -1,6 +1,6 @@
-package bsuir.lab2.classes.human;
+package bsuir.lab2_3.classes.human;
 
-import bsuir.lab2.classes.obj.Vegetable;
+import bsuir.lab2_3.classes.obj.Vegetable;
 
 public class Farmer extends human
 {
