@@ -1,6 +1,6 @@
-package sample;
+package bsuir.lab1.sample;
 
-import classes.Randomizer;
+import bsuir.lab1.classes.Randomizer;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

@@ -1,4 +1,4 @@
-package classes;
+package bsuir.lab1.classes;
 
 public class Randomizer {
     public static int randomize_low(int number)
