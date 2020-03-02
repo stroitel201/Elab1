@@ -1,17 +1,17 @@
 package bsuir.lab2_3.classes.obj;
 
 public abstract class Obj {
-    public Obj(String _name, int _count)
+    public Obj(String name, int count)
     {
-        name=_name;
-        count=_count;
+        this.name=name;
+        this.count=count;
     }
     protected String name;
     protected int count;
 
-    public void setName(String _name)
+    public void setName(String name)
     {
-        name =_name;
+        this.name =name;
     }
 
     public void setCount(int count) {

@@ -4,11 +4,11 @@ public class Vegetable extends Obj
 {
     private String type;
     private String color;
-    public Vegetable (String _name,String _type,String _color, int _count)
+    public Vegetable (String name,String type,String color, int count)
     {
-        super(_name,_count);
-        type=_type;
-        color=_color;
+        super(name,count);
+        this.type=type;
+        this.color=color;
     }
 
     public void setType(String type)

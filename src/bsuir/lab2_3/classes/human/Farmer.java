@@ -4,9 +4,9 @@ import bsuir.lab2_3.classes.obj.Vegetable;
 
 public class Farmer extends human
 {
-    public Farmer(String _name)
+    public Farmer(String name)
     {
-        super(_name);
+        super(name);
     }
 
     private void toWater()
@@ -17,11 +17,11 @@ public class Farmer extends human
     {
         System.out.println("Посадил овощ");
     }
-    public Vegetable toGrow(String _name,String _type, String _color, int _count)
+    public Vegetable toGrow(String name,String type, String color, int count)
     {
         toSeed();
         toWater();
         System.out.println("Вырастил овощ");
-        return new Vegetable(_name,_type,_color,_count);
+        return new Vegetable(name,type,color,count);
     }
 }

@@ -3,9 +3,9 @@ package bsuir.lab2_3.classes.human;
 import bsuir.lab2_3.classes.obj.Food;
 
 public abstract class human {
-    public human(String _name)
+    public human(String name)
     {
-        name=_name;
+        this.name=name;
     }
     protected String name;
     public void eat(Food food)
@@ -20,9 +20,9 @@ public abstract class human {
     {
         return name;
     }
-    public void setName(String _name)
+    public void setName(String name)
     {
-        name=_name;
+        this.name=name;
     }
 
 }

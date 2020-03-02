@@ -2,9 +2,9 @@ package bsuir.lab2_3.classes.human;
 
 public class Proger extends human
 {
-        public Proger(String _name)
+        public Proger(String name)
         {
-            super(_name);
+            super(name);
         }
         public void toCode()
         {
