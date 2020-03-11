@@ -14,7 +14,7 @@ public abstract class human {
     protected String name;
     public void eat(Food food, TextArea txt)
     {
-        txt.setText(food.getTaste());
+        txt.setText(food.getTaste()+" "+name+" поел");
         food.setCount(0);
         food.setName(null);
         food.setTaste(null);

@@ -127,7 +127,7 @@ public class Main extends Application {
                 if(vegs.getCount()==0)
                     output.setText("Нету овощей");
                 else {
-                    foods = chef.cook("салат", "", 15, vegs);
+                    foods = chef.cook("салат", "вкусно", 15, vegs);
                     foodlbl.setText(foods.getName());
                     foodtxt.setText(Integer.toString(foods.getCount()));
                     vegtxt.setText(Integer.toString(vegs.getCount()));

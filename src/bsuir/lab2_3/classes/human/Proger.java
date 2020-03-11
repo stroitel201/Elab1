@@ -15,12 +15,5 @@ public class Proger extends human
         {
             txt.setText("Пишу код");
         }
-    @Override
-    public void eat(Food food, TextArea txt)
-    {
-        txt.setText(food.getTaste()+" прогер поел");
-        food.setCount(0);
-        food.setName(null);
-        food.setTaste(null);
-    }
+
 }

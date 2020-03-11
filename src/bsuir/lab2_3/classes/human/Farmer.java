@@ -14,14 +14,7 @@ public class Farmer extends human
         super(name);
     }
 
-    @Override
-    public void eat(Food food, TextArea txt)
-    {
-        txt.setText(food.getTaste()+" фермер поел");
-        food.setCount(0);
-        food.setName(null);
-        food.setTaste(null);
-    }
+
 
     private void toWater(javafx.scene.control.TextArea txt)
     {

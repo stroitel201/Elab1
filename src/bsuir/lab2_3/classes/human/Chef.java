@@ -19,12 +19,5 @@ public class Chef extends human
         veg.setCount(0);
         return new Food(name,taste,count);
     }
-    @Override
-    public void eat(Food food, TextArea txt)
-    {
-        txt.setText(food.getTaste()+" повар поел");
-        food.setCount(0);
-        food.setName(null);
-        food.setTaste(null);
-    }
+
 }
