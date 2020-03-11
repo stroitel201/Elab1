@@ -1,6 +1,11 @@
 package bsuir.lab2_3.classes.human;
 
+import bsuir.lab2_3.classes.obj.Food;
 import bsuir.lab2_3.classes.obj.Vegetable;
+import com.sun.javafx.tk.quantum.MasterTimer;
+import javafx.scene.control.TextArea;
+
+import java.awt.*;
 
 public class Farmer extends human
 {
@@ -9,19 +14,28 @@ public class Farmer extends human
         super(name);
     }
 
-    private void toWater()
+    @Override
+    public void eat(Food food, TextArea txt)
     {
-        System.out.println("Овощ поливаю");
+        txt.setText(food.getTaste()+" фермер поел");
+        food.setCount(0);
+        food.setName(null);
+        food.setTaste(null);
     }
-    private void toSeed()
+
+    private void toWater(javafx.scene.control.TextArea txt)
     {
-        System.out.println("Посадил овощ");
+        txt.appendText("\nОвощ поливаю");
     }
-    public Vegetable toGrow(String name,String type, String color, int count)
+    private void toSeed(javafx.scene.control.TextArea txt)
     {
-        toSeed();
-        toWater();
-        System.out.println("Вырастил овощ");
+        txt.setText("Посадил овощ");
+    }
+    public Vegetable toGrow(String name,String type, String color, int count, javafx.scene.control.TextArea txt)
+    {
+        toSeed(txt);
+        toWater(txt);
+        txt.appendText("\nВырастил овощ");
         return new Vegetable(name,type,color,count);
     }
 }

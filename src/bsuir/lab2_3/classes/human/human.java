@@ -1,6 +1,10 @@
 package bsuir.lab2_3.classes.human;
 
 import bsuir.lab2_3.classes.obj.Food;
+import javafx.scene.control.TextArea;
+import javafx.scene.text.Text;
+
+import java.awt.*;
 
 public abstract class human {
     public human(String name)
@@ -8,9 +12,9 @@ public abstract class human {
         this.name=name;
     }
     protected String name;
-    public void eat(Food food)
+    public void eat(Food food, TextArea txt)
     {
-        System.out.println(food.getTaste());
+        txt.setText(food.getTaste());
         food.setCount(0);
         food.setName(null);
         food.setTaste(null);
