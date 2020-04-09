@@ -4,6 +4,7 @@ public class Vegetable extends Obj
 {
     private String type;
     private String color;
+    public Vegetable(){super(); type="def type"; color="def color";}
     public Vegetable (String name,String type,String color, int count)
     {
         super(name,count);

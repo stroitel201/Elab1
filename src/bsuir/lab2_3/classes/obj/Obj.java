@@ -1,6 +1,7 @@
 package bsuir.lab2_3.classes.obj;
 
 public abstract class Obj {
+    public Obj(){name="Obj"; count=0;}
     public Obj(String name, int count)
     {
         this.name=name;

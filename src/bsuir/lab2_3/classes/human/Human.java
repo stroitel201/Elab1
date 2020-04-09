@@ -6,8 +6,9 @@ import javafx.scene.text.Text;
 
 import java.awt.*;
 
-public abstract class human {
-    public human(String name)
+public abstract class Human {
+    public Human(){name="Human";}
+    public Human(String name)
     {
         this.name=name;
     }

@@ -1,6 +1,6 @@
 package bsuir.lab2_3.sample;
 
-import bsuir.lab2_3.classes.human.human;
+import bsuir.lab2_3.classes.human.Human;
 import bsuir.lab2_3.classes.human.Chef;
 import bsuir.lab2_3.classes.human.Farmer;
 import bsuir.lab2_3.classes.human.Proger;
@@ -24,7 +24,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
 
-    static void myhandle(human man, Food food, TextArea txt, TextArea foodtxt)
+    static void myhandle(Human man, Food food, TextArea txt, TextArea foodtxt)
     {
         if (food.getCount()==0)
         {

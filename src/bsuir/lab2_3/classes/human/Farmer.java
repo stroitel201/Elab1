@@ -1,14 +1,11 @@
 package bsuir.lab2_3.classes.human;
 
-import bsuir.lab2_3.classes.obj.Food;
 import bsuir.lab2_3.classes.obj.Vegetable;
-import com.sun.javafx.tk.quantum.MasterTimer;
 import javafx.scene.control.TextArea;
 
-import java.awt.*;
-
-public class Farmer extends human
+public class Farmer extends Human
 {
+    public Farmer(){super();}
     public Farmer(String name)
     {
         super(name);
@@ -16,11 +13,11 @@ public class Farmer extends human
 
 
 
-    private void toWater(javafx.scene.control.TextArea txt)
+    private void toWater(TextArea txt)
     {
         txt.appendText("\nОвощ поливаю");
     }
-    private void toSeed(javafx.scene.control.TextArea txt)
+    private void toSeed(TextArea txt)
     {
         txt.setText("Посадил овощ");
     }

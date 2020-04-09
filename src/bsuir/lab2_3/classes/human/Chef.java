@@ -2,11 +2,11 @@ package bsuir.lab2_3.classes.human;
 
 import bsuir.lab2_3.classes.obj.Food;
 import bsuir.lab2_3.classes.obj.Vegetable;
-import javafx.scene.control.TextArea;
 
 
-public class Chef extends human
+public class Chef extends Human
 {
+    public Chef(){super();}
     public Chef(String name)
     {
         super(name);
