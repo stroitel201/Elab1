@@ -7,8 +7,8 @@ public abstract class Obj {
         this.name=name;
         this.count=count;
     }
-    protected String name;
-    protected int count;
+    private String name;
+    private int count;
 
     public void setName(String name)
     {

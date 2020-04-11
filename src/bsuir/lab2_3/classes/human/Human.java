@@ -12,7 +12,7 @@ public abstract class Human {
     {
         this.name=name;
     }
-    protected String name;
+    private String name;
     public void eat(Food food, TextArea txt)
     {
         txt.setText(food.getTaste()+" "+name+" поел");
