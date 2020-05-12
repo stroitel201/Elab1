@@ -41,5 +41,5 @@ object Main {
       println(mylist.filter(isPrime))
       println(mylist.filter(isPrimeRec))
     }
-  
+
 }
