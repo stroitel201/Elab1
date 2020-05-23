@@ -8,7 +8,7 @@ object Main {
   val newlist:ListBuffer[String]=ListBuffer();
 
 
-  
+
   def sortpred(i: String,k:String) ={
     i.length>k.length
   }
