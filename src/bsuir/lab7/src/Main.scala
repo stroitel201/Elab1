@@ -13,12 +13,13 @@ object Main {
     else
       !(2 until i).exists(n => i % n == 0)
 
-  def PrimeOrNot(x:Int):Unit={
-    val flag:Boolean=isPrime(x)
-    flag match{
-      case true=>newlist.append(x/2)
-      case false=>newlist.append(x/3)
+  def PrimeOrNot(x:Int):Unit= {
+    def selection(x:Int): Int = x match {
+      case x if isPrime(x) => x / 2
+      case x if !isPrime(x) => x / 3
     }
+    
+    newlist.append(selection(x))
   }
   def main(args:Array[String]): Unit = {
     mylist.foreach(PrimeOrNot)
