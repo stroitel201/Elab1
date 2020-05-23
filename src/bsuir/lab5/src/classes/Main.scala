@@ -3,8 +3,9 @@ import scala.collection.mutable.ListBuffer
 import scala.io.StdIn
 object Main {
     val mylist:List[Int]=List(1,2,3,4,5,6,7,8,9,10,11,12,234,23,31,54,73);
+    val newlist:ListBuffer[Int]=ListBuffer();
 
-    //нерекурсивно
+  //нерекурсивно
     def isPrime(i: Int): Boolean =
       if (i <= 1)
         false
@@ -19,7 +20,11 @@ object Main {
       def isPrimeUntil(t: Int): Boolean = t == 1 || t > 1 && n%t != 0 && isPrimeUntil(t-1)
       isPrimeUntil(n/2)
     }
-
+    def primenewlist(size:Int):Unit={
+      if(size==0) return
+      if(isPrime(mylist(size-1))) newlist.append(mylist(size-1))
+      primenewlist(size-1)
+    }
 
     def primesUnder(n: Int): List[Int] = {
       require(n >= 2)
@@ -40,6 +45,8 @@ object Main {
       println(primesUnder(1000))
       println(mylist.filter(isPrime))
       println(mylist.filter(isPrimeRec))
+      primenewlist(mylist.size);
+      println(newlist)
     }
 
 }
