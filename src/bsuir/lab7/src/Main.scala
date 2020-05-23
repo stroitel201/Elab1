@@ -18,7 +18,7 @@ object Main {
       case x if isPrime(x) => x / 2
       case x if !isPrime(x) => x / 3
     }
-    
+
     newlist.append(selection(x))
   }
   def main(args:Array[String]): Unit = {
